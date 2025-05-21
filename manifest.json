@@ -1,0 +1,25 @@
+{
+  "short_name": "Réhahn Photography",
+  "name": "Réhahn Photography - Fine Art Photography",
+  "icons": [
+    {
+      "src": "logo_rehahn.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logo_rehahn.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo_rehahn.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
