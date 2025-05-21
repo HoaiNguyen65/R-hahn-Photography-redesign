@@ -1,0 +1,614 @@
+/* Artist page styling */
+.artist-page {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.artist-logo {
+  text-align: left;
+  width: clamp(5rem, 10.417vw, 150px);
+  display: flex;
+  position: absolute;
+  top: 1rem;
+}
+
+.artist-section {
+  margin-bottom: 5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.artist-title {
+  color: var(--color-title); /* Gold/beige color */
+  font-size: var(--font-size-lg);
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: myFont;
+}
+
+.artist-subtitle {
+  color: #fff;
+  font-size: var(--font-size-md);
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: myFont;
+}
+
+.artist-link {
+  color: #c9ab81;
+  text-decoration: none;
+}
+
+.artist-link:hover {
+  text-decoration: underline;
+}
+
+/* Biography section */
+.artist-quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 400px;
+}
+
+.artist-quote-container {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.artist-portrait-image {
+  width: 50%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.artist-portrait-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.artist-blockquote {
+  border-left: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 26rem;
+  margin-inline: auto;
+}
+
+.artist-blockquote p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+  margin: 0;
+  padding: 0 1rem;
+}
+.artist-blockquote i {
+  position: absolute;
+  font-size: var(--font-size-icon);
+}
+.artist-blockquote i:first-child {
+  left: -0.8rem;
+  top: -0.5rem;
+}
+.artist-blockquote i:last-child {
+  right: 0.2rem;
+  bottom: 0;
+}
+
+/* Early life section */
+.artist-images-row {
+  display: flex;
+  justify-content: space-between;
+  margin-block: clamp(0.5rem, 8vw, 5rem);
+  width: 100%;
+}
+
+.artist-early-life-img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+.artist-quote-container-right {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+.early-life-content {
+  max-width: 43.75rem;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+.early-life-content p{
+  font-size: var(--font-size-sm);
+  font-family: myFont;
+  text-align: justify;
+}
+/* Career start section */
+.artist-career-content {
+  font-family: myFont;
+  font-size: var(--font-size-sm);
+  text-align: justify;
+  max-width: 62.5rem;
+  margin-inline: auto;
+  margin-block: clamp(0.5rem, 8vw, 5rem);
+}
+.artist-quote-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.artist-quote-container-left {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.artist-photos-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.artist-photos-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.artist-photos-grid img:first-child {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+/* fine art galleries section */
+.artist-fineart-content {
+  font-family: myFont;
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 60rem;
+  margin-inline: auto; 
+}
+.artist-fineart-content p {
+  line-height: 2.5rem;
+  font-family: "Montserrat";
+}
+.artist-title[type="fineart"] {
+  margin-bottom: 2.5rem;
+}
+
+/* Read more section */
+.artist-article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.artist-article-card {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-article-img {
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.artist-article-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.artist-article-card:hover img {
+  transform: scale(1.05);
+}
+
+.artist-article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.artist-article-title {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-family: myFont;
+  font-size: var(--font-size-sm);
+}
+
+/* Footer */
+.artist-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 80px;
+  padding-top: 3rem;
+  border-top: 1px solid #333;
+  padding-inline: 2rem;
+}
+.artist-footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artist-footer-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artist-footer-section-title {
+  color: var(--color-title);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: myFont;
+}
+
+.artist-footer-section p{
+  font-family: myFont;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.artist-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artist-footer-item {
+  margin-bottom: 0.8rem;
+}
+
+.artist-footer-link {
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.artist-footer-link:hover {
+  color: var(--color-title);
+}
+
+.artist-newsletter-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.artist-newsletter-button-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+.artist-newsletter-button-wrapper .artist-newsletter-button {
+  flex: 1;
+}
+
+.artist-newsletter-input {
+  background-color: transparent;
+  border: 1px solid #444;
+  padding: 0.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.artist-newsletter-button {
+  outline: none;
+  border: 1px solid var(--color-title);
+  background-color: transparent;
+  color: var(--color-title);
+  font-size: 0.8rem;
+  min-width: unset;
+  width: auto;
+  height: 2.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.artist-newsletter-button:hover {
+  background-color: var(--color-title);
+  color: #000;
+}
+
+.artist-social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.artist-social-link {
+  color: var(--color-title);
+  font-size: 1.7rem;
+  transition: transform 0.3s ease;
+}
+.artist-social-link:last-child {
+  font-size: 1.8rem;
+}
+
+.artist-social-link:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hide elements before animation */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animation classes */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.8s ease forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.8s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .artist-page{
+    padding-block: 0.8rem;
+    margin-bottom: 6rem;
+  }
+  .artist-logo {  
+    top: 0;
+  }
+  .artist-quote-section, 
+  .artist-images-row, 
+  .artist-quote-images {
+    flex-direction: column;
+  }
+
+  .artist-quote-container,
+  .artist-portrait-image,
+  .artist-quote-container-right,
+  .artist-quote-container-left,
+  .artist-early-life-img,
+  .artist-photos-grid {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .artist-article-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .artist-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .artist-footer {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    grid-gap: 1.5rem;
+    padding-inline: 1rem;
+  }
+  .artist-footer-section {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-quote-section,
+  .artist-images-row,
+  .artist-quote-images {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .artist-quote-container,
+  .artist-portrait-image,
+  .artist-quote-container-right,
+  .artist-quote-container-left,
+  .artist-early-life-img,
+  .artist-photos-grid {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .artist-photos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-size-md: 1.1rem;
+  }
+  
+  .artist-footer {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding-inline: 0.5rem;
+  }
+  .artist-footer-section {
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .artist-newsletter-input {
+    width: 100%;
+    min-width: 0;
+  }
+  .artist-newsletter-button-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .artist-newsletter-button {
+    width: 100%;
+    padding: 8px;
+  }
+  .artist-social-icons {
+    margin-top: 0.5rem;
+  }
+  .artist-title {
+    font-size: 1.1rem;
+  }
+  .artist-subtitle {
+    font-size: 0.95rem;
+  }
+  .artist-section {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .artist-section,
+  .early-life-content,
+  .artist-career-content,
+  .artist-fineart-content,
+  .artist-article-title,
+  .artist-footer-section p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  :root{
+    --font-size-sm: 0.8rem;
+  }
+  .artist-section,
+  .early-life-content,
+  .artist-career-content,
+  .artist-fineart-content,
+  .artist-article-title,
+  .artist-footer-section p {
+    font-size: 0.8rem;
+  }
+}
+
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.5s ease-out;
+}
+
+.toast-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-content i {
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.toast-content span {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+} 

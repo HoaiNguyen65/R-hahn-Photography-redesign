@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.mainwrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .App, .mainwrapper {
+   
+  }
+} 

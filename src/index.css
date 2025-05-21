@@ -1,0 +1,48 @@
+@font-face {
+  font-family: myFont;
+  src: url('./assets/fonts/myfont.TTF');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  /* font-family: myFont, Arial, sans-serif; */
+}
+
+
+:root {
+  --color-title: #AE9B88;
+  --mobile-breakpoint: 767px;
+  --tablet-breakpoint: 991px;
+  --desktop-breakpoint: 1200px;
+  --font-size-lg: 3rem;
+  --font-size-md: 1.875rem;
+  --font-size-sm: 1.25rem;
+  --font-size-icon: 1.75rem
+}
+
+body {
+  height: 100vh;
+  background-color: #000000;
+  font-family: myFont, Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  padding: 0 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive container */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+} 

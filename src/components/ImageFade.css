@@ -1,0 +1,103 @@
+.imgFade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgFade p {
+  position: absolute;
+  color: white;
+  left: 150px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.imgFade svg {
+  cursor: pointer;
+}
+
+.imgFade > a {
+  position: absolute;
+  left: 30px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.hideAnimation {
+  animation: hideAnimation 0.5s forwards;
+}
+
+.show {
+  display: block;
+  animation: showAnimation 0.5s forwards;
+}
+
+@keyframes showAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.imgFadeWrapper {
+  position: relative;
+}
+
+.imgFadeWrapper svg {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  z-index: 101;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 991px) {
+  .imgFade p {
+    left: 100px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .imgFade {
+    flex-direction: column;
+  }
+  
+  .imgFade p {
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .imgFade > a {
+    left: 15px;
+  }
+  
+  .imgFadeWrapper svg {
+    top: -25px;
+    left: 15px;
+  }
+} 
